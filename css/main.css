@@ -1,0 +1,148 @@
+:root {
+    --primary-color: hsl(257, 40%, 49%);
+    --font-weight-light: 400;
+    --font-weight-bold: 700;
+    --font-family-heading: 'Poppins';
+    --font-family-body: 'Open Sans';
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+body {
+    font-family: var(--font-family-body);
+    background-color: var(--primary-color);
+    background-image: url(/images/bg-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container {
+    max-width: 120rem;
+    min-width: 37.5rem;
+    margin: 0 auto;
+    min-height: 100vh;
+    position: relative;
+}
+
+header {
+    padding: 4rem 0;
+}
+
+.logo {
+    height: 3.5rem;
+}
+
+.cta {
+    display: flex;
+
+}
+
+.cta__figure {
+    flex: 0 1 50%;
+}
+
+.cta__img {
+    display: block;
+    max-width: 100%;
+}
+
+.cta__description {
+    flex: 0 1 50%;
+    padding: 4rem;
+    color: #fff;
+}
+
+.cta__title {
+    font-family: var(--font-family-heading), sans-serif;
+    line-height: 1.4;
+    text-transform: capitalize;
+    font-size: 3.5rem;
+    margin-bottom: 2rem;
+}
+
+.cta__text {
+    text-align: justify;
+    font-family: var(--font-family-body), sans-serif;
+    line-height: 1.8;
+    font-size: 1.9rem;
+    font-weight: 300;
+    margin-bottom: 2rem;
+}
+
+.cta__button {
+    color: var(--primary-color);
+    border: none;
+    font-size: 1.6rem;
+    padding: 1.5rem 7rem;
+    cursor: pointer;
+    border-radius: 100px;
+    outline: none;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+    transition: transform .1s;
+}
+
+.cta__button:active {
+    transform: translateY(2px);
+    box-shadow: none;
+}
+
+footer {
+    padding: 2rem 0;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.social__link {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    width: 4rem;
+    height: 4rem;
+    margin-right: 1rem;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    transition: color .2s;
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-5px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.social__link:hover {
+    animation: bounce .6s infinite;
+}
+
+
+.social__svg {
+    fill: currentColor;
+    width: 1.75rem;
+    height: 1.75rem;
+}

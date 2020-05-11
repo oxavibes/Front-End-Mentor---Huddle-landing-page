@@ -1,0 +1,39 @@
+@media only screen and (max-width: 900px) {
+
+    header {
+        padding: 4rem;
+    }
+
+    body {
+        background-image: url(/images/bg-mobile.svg);
+        background-size: contain;
+    }
+
+    .cta {
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .cta__figure {
+        padding: 0 4rem;
+    }
+
+    .cta__description,
+    .cta__text {
+        text-align: center;
+    }
+
+    footer {
+        padding: 4rem 0;
+    }
+
+    .social-icons {
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .cta__title {
+        font-size: 3rem;
+    }
+}
