@@ -1,10 +1,7 @@
 @media only screen and (max-width: 900px) {
 
-    header {
-        padding: 4rem;
-    }
-
     body {
+        font-size: 50%;
         background-image: url(/images/bg-mobile.svg);
         background-size: contain;
     }
@@ -15,12 +12,17 @@
     }
 
     .cta__figure {
-        padding: 0 4rem;
+        /* padding: 0 4rem; */
+        margin-bottom: 6rem;
     }
 
     .cta__description,
     .cta__text {
         text-align: center;
+    }
+
+    .cta__description {
+        padding: 0;
     }
 
     footer {
@@ -33,7 +35,8 @@
 }
 
 @media only screen and (max-width: 600px) {
-    .cta__title {
-        font-size: 3rem;
+    body {
+        font-size: 35%;
     }
+
 }
