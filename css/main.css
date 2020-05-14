@@ -34,12 +34,20 @@ body {
     max-width: 120rem;
     min-width: 37.5rem;
     margin: 0 auto;
+    padding: 0 4rem;
     min-height: 100vh;
     position: relative;
 }
 
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+}
+
 header {
-    padding: 4rem 0;
+    padding: 4rem;
 }
 
 .logo {
@@ -57,12 +65,12 @@ header {
 
 .cta__img {
     display: block;
-    max-width: 100%;
+    width: 100%;
 }
 
 .cta__description {
     flex: 0 1 50%;
-    padding: 4rem;
+    padding-left: 4rem;
     color: #fff;
 }
 
@@ -85,9 +93,11 @@ header {
 
 .cta__button {
     color: var(--primary-color);
+    background: #fff;
     border: none;
     font-size: 1.6rem;
     padding: 1.5rem 7rem;
+    font-weight: 400;
     cursor: pointer;
     border-radius: 100px;
     outline: none;
@@ -101,7 +111,7 @@ header {
 }
 
 footer {
-    padding: 2rem 0;
+    padding: 4rem;
 }
 
 .social-icons {
